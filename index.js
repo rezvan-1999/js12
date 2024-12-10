@@ -4,17 +4,14 @@
 // hint: To access properties in the method you must use "this" keyword.
 // !Answer:
 
-
 const data = {
-    name: "rezvan",
-    age: 4321,
-}
+  name: "rezvan",
+  age: 4321,
+  getData() {
+    console.log(
+      `Hello, my name is ${this.name}, and I am ${this.age} years old :))).`
+    );
+  },
+};
 
-function getData(obj){
-for (const getData in obj){
-    return `Hello, my name is ${obj[getData]}, and I am ${obj[getData]} years old.`
-}
-}
-
-let result = getData(data);
-console.log(result);
+data.getData();
