@@ -4,3 +4,14 @@
 // todo-3:call the innerFunc in the outerFunc.
 
 // !Answer:
+
+const innerFunction = (a, b) => {
+  return a * b;
+};
+
+const outherFunction = (one, two) => {
+    return innerFunction(one, two);
+}
+
+const result = outherFunction(8,3);
+console.log(result);
