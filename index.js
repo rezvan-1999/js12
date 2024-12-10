@@ -3,10 +3,17 @@
 //todo2: Calculate the length of each element in the array.
 //todo3: Return a new array containing the lengths of the elements.
 
-// const obj = {
-//   string: "Hello world how are you?",
-//   write code here
-// }
+const obj = {
+  string: "Hello world how are you?",
+  //   write code here
+  counterString() {
+    const stringToArray = obj.string.split(" ");
+    const lengthEle = stringToArray.map((item) => item.length);
+    console.log(lengthEle);
+  },
+};
+
+obj.counterString();
 
 // note: obj.counterString("Hello world how are you?")==>[ 5, 5, 3, 3, 4 ]
 
